@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Swimming Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#show").mouseenter(function() {
+        $("button").css("background", "lightblue");
+      });
+      $("#show").mouseleave(function() {
+        $("button").css("background", "white");
+      });
+    });
+  </script>
+
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-family: Lato;
+    }
+
+    a {
+      color: black;
+      text-decoration: underline;
+    }
+
+    .margin {
+      margin-bottom: 45px;
+    }
+
+    .bg-1 {
+      background-color: #46b5ff;
+
+      color: #ffffff;
+    }
+
+    .bg-2 {
+      background-color: #2f2f2f;
+      /* Dark Blue */
+      color: #ffffff;
+    }
+
+    .bg-3 {
+      background-color: #ffffff;
+      /* White */
+      color: #555555;
+    }
+
+    #copyright {
+      color: black;
+    }
+
+    .jumbotron {
+      background-color: #474e5d;
+      /* Dark Blue */
+      color: #ffffff;
+    }
+
+    .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    .navbar-nav li a:hover {
+      color: black !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+        <a class="navbar-brand" href=index.html>TELE Swimming</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href=learn-how-to-swim.html>Learn How to Swim</a></li>
+          <li><a href="freestyle.html">Freestyle</a></li>
+          <li><a href="backstroke.html">Backstroke</a></li>
+          <li><a href="breaststroke.html">Breaststroke</a></li>
+          <li><a href="butterfly.html">Butterfly</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- First Container -->
+  <div class="container-fluid bg-1 text-center">
+    <h1>What is Swimming?</h1>
+    <h3>Swimming is the simultaneous movement of the arms and legs to stay above the water</h3>
+    <img src="Unknown.png" class="img-responsive img-circle margin" style="display:inline" alt="Swim" width="350" height="350">
+  </div>
+
+  <!-- Second Container -->
+  <div class="container">
+    <div class="jumbotron">
+      <h3 class="margin">Why is Swimming so Important?</h3>
+      <p> Swimming is a skill that will come useful several time during a person's life.</p><br>
+      <p>If it is going to the pool, beach, or any place with water, knowing how to swim will allow to go into the water comfortably and fearlessly. And hey! It might even save your life. </p>
+
+
+    </div>
+  </div>
+  <!-- Third Container (Grid) -->
+
+  <div class="container-fluid bg-1  text-center">
+    <h3 class="margin">Introduction of the Swimming Strokes! </h3> <br>
+    <div class="row">
+      <div class="col-xs-6">
+        <h3><a href="freestyle.html">Freestyle</a></h3>
+        <img src="Freestyle_swimming2.gif" class="img-responsive margin" style="width:100%" alt="giffree">
+      </div>
+      <div class="col-xs-6">
+        <h3><a href="backstroke.html">Backstroke </a></h3>
+        <img src="Backstroke.gif" class="img-responsive margin" style="width:100%" alt="gifback">
+      </div>
+      <div class="col-xs-6">
+        <h3><a href="breaststroke.html">Breaststroke</a></h3>
+        <img src="Breaststroke2.gif" class="img-responsive margin" style="width:100%" alt="gifbreast"> </div>
+      <div class="col-xs-6">
+        <h3><a href="butterfly.html"> Butterfly</a></h3>
+        <img src="Butterfly_stroke.gif" class="img-responsive margin" style="width:100%" alt="giffly">
+      </div>
+
+    </div>
+  </div>
+  <div class="container-fluid bg-2 text-center">
+    <h3 class="margin">Don't Know How to Swim? </h3><br>
+    <button id="show"> <a href=learn-how-to-swim.html>Start Here!</a></button>
+  </div>
+  <!-- Footer -->
+  <footer id="copyright" class="container-fluid bg-3 text-center">
+    <p>Copyright © 2019 Telecom Swimming</p>
+  </footer>
+
+</body>
+
+</html>
